@@ -1,0 +1,46 @@
+/* 重置CSS */
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: aqua;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: "Franklin Gothic Medium", sans-serif;
+    color: #333;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+/* 通用CSS */
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    height: 0;
+    line-height:0;
+    display: block;
+    clear: both; 
+}
+
