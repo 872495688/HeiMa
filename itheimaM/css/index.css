@@ -1,18 +1,18 @@
 body{
     background: #f5f5f5;
 }
-/*主体盒子*/
+
 .hm_layout{
     width: 100%;
-    max-width: 640px;/*设计图的原因  不然它放大*/
-    min-width: 300px;/*为了更好的布局*/
+    max-width: 640px;
+    min-width: 300px;
     margin: 0 auto;
     position: relative;
 }
 
-/*头部搜索*/
+
 .hm_header{
-    position: fixed;/*是以  window 最外层容器 计算*/
+    position: fixed;
     left: 0;
     top: 0;
     height: 40px;
@@ -21,10 +21,10 @@ body{
 }
 .hm_header > .hm_header_box{
     width: 100%;
-    max-width: 640px;/*设计图的原因  不然它放大*/
-    min-width: 300px;/*为了更好的布局*/
+    max-width: 640px;
+    min-width: 300px;
     margin: 0 auto;
-    background: rgba(201,21,35,0);/*透明度在js中动态设置*/
+    background: rgba(201,21,35,0);
     height: 40px;
     position: relative;
 }
@@ -70,7 +70,7 @@ body{
     top: 10px;
     left: 85px;
 }
-/*轮播图*/
+
 .hm_banner{
     width: 100%;
     position: relative;
@@ -78,7 +78,7 @@ body{
 }
 .hm_banner > ul:first-child{
     width: 1000%;
-    -webkit-transform:translateX(-10%);/*尽可能做webkit内核的兼容*/
+    -webkit-transform:translateX(-10%);
     transform: translateX(-10%);
 }
 .hm_banner > ul:first-child > li{
@@ -91,11 +91,7 @@ body{
 }
 .hm_banner > ul:first-child > li > a > img{
     width: 100%;
-    /*
-    font-size 0
-    block
-    vertical-align: middle;
-    */
+
     display: block;
 }
 .hm_banner > ul:last-child{
@@ -120,7 +116,7 @@ body{
 .hm_banner > ul:last-child > li:nth-child(1){
     margin-left: 0;
 }
-/*导航栏模块*/
+
 .hm_nav{
     width: 100%;
     background: #fff;
@@ -149,7 +145,7 @@ body{
     font-size: 12px;
     padding: 6px 0;
 }
-/*商品主盒子*/
+
 .hm_product{
     padding: 0 5px;
 }
@@ -175,9 +171,7 @@ body{
     color: #666;
 }
 .hm_product > .product_box > .product_box_tit > h3::before{
-    /*
-        display block  position: absolute  float left
-    */
+
     content:"";
     position: absolute;
     top: 10px;
@@ -187,7 +181,7 @@ body{
     background: #d8505c;
 }
 
-/*掌上秒杀 second kill*/
+
 .hm_sk{ }
 .hm_sk .sk_icon{
     background: url("../images/seckill-icon.png") no-repeat;
@@ -245,22 +239,18 @@ body{
     display: block;
     margin: 0 auto;
 }
-/*
-E:first-of-type  选择E同类型的同级的  第一个元素
-E:last-of-type  选择E同类型的同级的  最后个元素
-E:nth-of-type(n)  选择E同类型的同级的  第n个元素
-*/
+
 .hm_sk .product_box_con > ul > li >p:first-of-type{
     color: #d8505c;
     padding-top: 5px;
 }
 .hm_sk .product_box_con > ul > li >p:last-of-type{
-    text-decoration: line-through;/*删除线*/
+    text-decoration: line-through;
     color: #666;
     padding-top: 5px;
 }
 
-/*组合样式*/
+
 .w_50{
     width: 50%;
     display: block;
