@@ -14,7 +14,7 @@
         <header class="hm_header">
             <div class="hm_header_box">
                 <a href="#" class="icon_logo"></a>
-                <!-- 搜索按钮 -->
+                <!-- 小键盘  enter 改变成  搜索 按钮 -->
                 <form action="#">
                     <span class="icon_search"></span>
                     <input type="search" placeholder="提示站位"/>
@@ -25,16 +25,16 @@
         <!--轮播图-->
         <div class="hm_banner">
             <ul class="clearfix">
-                <li><a href="#"><img src="images/l.jpg" alt=""/></a></li>
-                <li><a href="#"><img src="images/2.jpg" alt=""/></a></li>
-                <li><a href="#"><img src="images/3.jpg" alt=""/></a></li>
-                <li><a href="#"><img src="images/4.jpg" alt=""/></a></li>
-                <li><a href="#"><img src="images/5.jpg" alt=""/></a></li>
-                <li><a href="#"><img src="images/6.jpg" alt=""/></a></li>
-                <li><a href="#"><img src="images/7.jpg" alt=""/></a></li>
-                <li><a href="#"><img src="images/8.jpg" alt=""/></a></li>
-                <li><a href="#"><img src="images/9.jpg" alt=""/></a></li>
-                <li><a href="#"><img src="images/l0.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l8.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l1.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l2.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l3.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l4.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l5.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l6.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l7.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l8.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l1.jpg" alt=""/></a></li>
             </ul>
             <ul>
                 <li class="now"></li>
@@ -58,44 +58,44 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/nav8.png" alt=""/>
-                        <p>黑马超市</p>
+                        <img src="images/nav1.png" alt=""/>
+                        <p>分类查询</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="images/nav2.png" alt=""/>
-                        <p>购物车</p>
+                        <p>分类查询</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="images/nav3.png" alt=""/>
-                        <p>个人中心</p>
+                        <p>分类查询</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="images/nav4.png" alt=""/>
-                        <p>充值中心</p>
+                        <p>分类查询</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="images/nav5.png" alt=""/>
-                        <p>黑马理财</p>
+                        <p>分类查询</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="images/nav6.png" alt=""/>
-                        <p>黑马培训</p>
+                        <p>分类查询</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/nav2.png7.png" alt=""/>
-                        <p>黑马圈子</p>
+                        <img src="images/nav7.png" alt=""/>
+                        <p>分类查询</p>
                     </a>
                 </li>
             </ul>
@@ -126,17 +126,17 @@
                 <div class="product_box_con">
                     <ul class="clearfix">
                         <li>
-                            <a href="#"><img src="images/detai1.jpg" alt=""/></a>
+                            <a href="#"><img src="images/detail01.jpg" alt=""/></a>
                             <p>&yen;10.00</p>
                             <p>&yen;100.00</p>
                         </li>
                         <li>
-                            <a href="#"><img src="images/detai2.jpg" alt=""/></a>
+                            <a href="#"><img src="images/detail02.jpg" alt=""/></a>
                             <p>&yen;10.00</p>
                             <p>&yen;100.00</p>
                         </li>
                         <li>
-                            <a href="#"><img src="images/detai3.jpg" alt=""/></a>
+                            <a href="#"><img src="images/detail01.jpg" alt=""/></a>
                             <p>&yen;10.00</p>
                             <p>&yen;100.00</p>
                         </li>
@@ -170,6 +170,7 @@
                 <!--头部-->
                 <div class="product_box_tit"><h3>黑马超市</h3></div>
                 <!--内容-->
+                <!--内容-->
                 <div class="product_box_con clearfix">
                     <a href="#" class="f_left w_50 b_right"><img src="images/cp1.jpg" alt=""/></a>
                     <a href="#" class="f_right w_50 b_bottom"><img src="images/cp2.jpg" alt=""/></a>
@@ -178,7 +179,61 @@
             </section>
         </main>
     </div>
-    <script src="js/common.js"></script>
-    <script src="js/index.js"></script>
+    <!--引用核心文件-->
+    <script src="js/zepto/zepto.min.js"></script>
+    <!--引用扩展性选择器-->
+    <script src="js/zepto/selector.js"></script>
+    <!--引用动画模块-->
+    <script src="js/zepto/fx.js"></script>
+    <!--引用移动touch-->
+    <script src="js/zepto/touch.js"></script>
+    <script>
+        $(function(){
+            /*banner*/
+            var $banner = $('.hm_banner');
+            var width = $banner.width();
+
+            /*图片盒子*/
+            var imageBox = $banner.find('ul:eq(0)');
+            /*点盒子*/
+            var pointBox = $banner.find('ul:eq(1)')
+            /*所有的点*/
+            var points = pointBox.find('li');
+
+            var animateFuc = function(){
+                imageBox.animate({'transform':'translateX('+(-index*width)+'px)'},200,'ease',function(){
+                    if(index >= 9){
+                        index = 1;
+                        /*瞬间定位*/
+                        imageBox.css({'transform':'translateX('+(-index*width)+'px)'});
+                    }else if(index <= 0){
+                        index = 8;
+                        imageBox.css({'transform':'translateX('+(-index*width)+'px)'});
+                    }
+                    /*点盒子 对应*/
+                    points.removeClass('now').eq(index-1).addClass('now');
+                });
+            };
+
+            var index =1;
+            var timer = setInterval(function(){
+                index ++;
+                /*做动画*/
+                animateFuc();
+            },5000);
+
+
+            imageBox.on('swipeLeft',function(){
+                index ++;
+                animateFuc();
+            });
+
+            imageBox.on('swipeRight',function(){
+                index --;
+                animateFuc();
+            });
+
+        });
+    </script>
 </body>
 </html>
