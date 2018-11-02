@@ -1,10 +1,6 @@
-/**
- * ITCAST WEB
- * Created by zhousg on 2016/4/27.
- */
-/*页面加载完成之后执行*/
+
 window.onload = function(){
-    /*搜索区块的颜色变化*/
+    
     search();
     /*轮播图*/
     banner();
@@ -13,10 +9,7 @@ window.onload = function(){
 };
 /*搜索区块的颜色变化*/
 function search(){
-    /*
-     * 1.颜色随着 页面的滚动  逐渐加深
-     * 2.当我们超过  轮播图的  时候  颜色保持不变
-     * */
+
 
     /*获取搜索盒子*/
     var searchBox = document.querySelector('.hm_header_box');
@@ -31,10 +24,10 @@ function search(){
         var top = document.body.scrollTop;
         var opacity = 0;
         if( top < h){
-            /*1.颜色随着 页面的滚动  逐渐加深*/
+            
             opacity = top/h * 0.85
         }else{
-            /*2.当我们超过  轮播图的  时候  颜色保持不变*/
+           
             opacity = 0.85
         }
 
@@ -45,13 +38,7 @@ function search(){
 }
 /*轮播图*/
 function banner(){
-    /*
-     * 1.自动的滚动起来    （定时器，过渡）
-     * 2.点随之滚动起来     （改变当前点元素的样式）
-     * 3.图片滑动           （touch事件）
-     * 4.当不超过一定的滑动距离的时候  吸附回去  定位回去     （一定的距离  1/3  屏幕宽度  过渡）
-     * 5.当超过了一定的距离的时候    滚动  到上一张 或 下一张  （一定的距离  1/3  屏幕宽度  过渡）
-     * */
+  
 
     /*获取到dom对象*/
     /*banner*/
