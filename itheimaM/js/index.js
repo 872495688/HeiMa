@@ -40,13 +40,12 @@ function search(){
 function banner(){
   
 
-    /*获取到dom对象*/
-    /*banner*/
+
     var banner = document.querySelector('.hm_banner');
     /*屏幕的宽度*/
     var w = banner.offsetWidth;
     /*图片盒子*/
-    var imageBox = banner.querySelector('ul:first-child');/*querySelector只支持有效的css选择器*/
+    var imageBox = banner.querySelector('ul:first-child');
     /*点盒子*/
     var pointBox = banner.querySelector('ul:last-child');
     /*所有的点*/
@@ -70,13 +69,12 @@ function banner(){
     };
 
 
-    /*1.自动的滚动起来    （定时器，过渡）*/
+  
     var index = 1;
     var timer = setInterval(function(){
         /*箱子滚动*/
         index  ++ ;
-        /*定位  过渡来做定位的  这样才有动画*/
-        /*加过渡*/
+     
         addTransition();
         /*改变位子*/
         setTranslateX(-index*w);
@@ -105,12 +103,12 @@ function banner(){
         setPoint();
     });
 
-    /*2.点随之滚动起来     （改变当前点元素的样式）*/
+  
     var setPoint = function(){
         /*把所有点的样式清除*/
         for(var i = 0 ; i < points.length ; i ++){
             points[i].className = " ";
-           /* points[i].classList.remove('now');*/
+         
         }
         points[index-1].className = "now";
     }
@@ -129,7 +127,7 @@ function banner(){
     imageBox.addEventListener('touchmove',function(e){
         isMove = true;
         moveX = e.touches[0].clientX;
-        distanceX = moveX - startX;/*distanceX  值  正负*/
+        distanceX = moveX - startX;
 
         /*算出当前图片盒子需要定位的位子*/
         console.log(distanceX);
@@ -146,9 +144,9 @@ function banner(){
     });
     imageBox.addEventListener('touchend',function(e){
 
-        /*当超过了一定的距离的时候 */
+        
         if(isMove && (Math.abs(distanceX) > w/3)){
-            /*5.当超过了一定的距离的时候    滚动  到上一张 或 下一张  （一定的距离  1/3  屏幕宽度  过渡）*/
+            
             if(distanceX > 0){
                 index --;/*向右滑  上一张*/
             }else{
@@ -159,7 +157,7 @@ function banner(){
         }
         /*当不超过一定的滑动距离的时候*/
         else {
-            /*4.当不超过一定的滑动距离的时候  吸附回去  定位回去     （一定的距离  1/3  屏幕宽度  过渡）*/
+            
             addTransition();
             setTranslateX(-index * w);
         }
@@ -175,8 +173,8 @@ function banner(){
         timer = setInterval(function(){
             /*箱子滚动*/
             index  ++ ;
-            /*定位  过渡来做定位的  这样才有动画*/
-            /*加过渡*/
+         
+           
             addTransition();
             /*改变位子*/
             setTranslateX(-index*w);

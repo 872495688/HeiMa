@@ -24,12 +24,12 @@ body{
     position: absolute;
     top: 8px;
     left: 0;
-    background: url("../images/safe_icon.png") no-repeat;
+    background: url("../images/buy-logo.png") no-repeat;
     background-size: 18px 18px;
     width: 18px;
     height: 18px
 }
-/*µêÆÌ*/
+/*ï¿½ï¿½ï¿½ï¿½*/
 .hm_shop{
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
@@ -67,7 +67,7 @@ body{
 .hm_shop > .hm_shop_con{
 
 }
-/*ÉÌÆ·ºÐ×Ó*/
+/*ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½*/
 .hm_product{
     border-top: 1px solid #ccc;
     height: 100px;
@@ -148,7 +148,7 @@ body{
     margin-top: -2px;
 }
 
-/*¸´Ñ¡¿ò*/
+/*ï¿½ï¿½Ñ¡ï¿½ï¿½*/
 .hm_check_box{
     height: 34px;
     width: 40px;
@@ -164,7 +164,7 @@ body{
 }
 
 
-/*µ¯³ö¿ò*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .hm_win{
     position: fixed;
     top: 0;

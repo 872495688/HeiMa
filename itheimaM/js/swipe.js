@@ -1,13 +1,4 @@
-/**
- * Created by zhousg on 2016/3/18.
- */
-/**
- * @author zhousg
- * @Date 2016-02-04
- * @Method 滑动方法  针对一个大容器内部的容器做滑动封装
- * @param args args.swipeDom 大容器对象  args.swipeType 滑动类型  args.swipeDistance 缓冲距离
- * 注意：子容器的高宽度是取的内容的高宽 所以padding的大小有影响
- */
+
 if(!window.itcast){
     window.itcast = {};
 }
@@ -116,9 +107,7 @@ itcast.iScroll.prototype = {
             }
         },false);
         window.addEventListener('touchend',function(e){
-            /*在限制滑动区间之后 重新计算当前定位*/
-            /*判断是否在我们的合理定位区间内*/
-            /*先向下滑动 */
+         
             if((that.currPostion-that.movePostion) > that.maxPostion){
                 that.currPostion = that.maxPostion;
                 that._addTransition();
