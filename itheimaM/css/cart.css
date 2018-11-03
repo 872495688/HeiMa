@@ -29,7 +29,7 @@ body{
     width: 18px;
     height: 18px
 }
-/*����*/
+
 .hm_shop{
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
@@ -67,7 +67,7 @@ body{
 .hm_shop > .hm_shop_con{
 
 }
-/*��Ʒ����*/
+
 .hm_product{
     border-top: 1px solid #ccc;
     height: 100px;
@@ -148,7 +148,7 @@ body{
     margin-top: -2px;
 }
 
-/*��ѡ��*/
+
 .hm_check_box{
     height: 34px;
     width: 40px;
@@ -164,7 +164,7 @@ body{
 }
 
 
-/*������*/
+
 .hm_win{
     position: fixed;
     top: 0;

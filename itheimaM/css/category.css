@@ -1,14 +1,14 @@
-/*ÂúÆÁÒ³Ãæ*/
+
 html,body{
     height: 100%;
 }
-/*·ÖÀàºĞ×Ó*/
+
 .hm_category{
     height: 100%;
     padding-top: 45px;
     overflow: hidden;
 }
-/*×ó²àÀ¸*/
+
 .hm_category_left{
     width: 90px;
     height: 100%;
@@ -37,7 +37,7 @@ html,body{
     color: #d8505c;
 }
 
-/*ÓÒ²àÀ¸*/
+/*å³ä¾§æ */
 .hm_category_right{
     overflow: hidden;
     height: 100%;

@@ -98,8 +98,7 @@ function banner(){
             /*改变位子*/
             setTranslateX(-index*w);
         }
-        /*index 1-8  索引范围*/
-        /*point 0-7 */
+      
         setPoint();
     });
 
@@ -129,10 +128,10 @@ function banner(){
         moveX = e.touches[0].clientX;
         distanceX = moveX - startX;
 
-        /*算出当前图片盒子需要定位的位子*/
+      
         console.log(distanceX);
 
-        /*将要去做定位*/
+        
         var currX = -index*w + distanceX;
         /*删除过渡*/
         removeTransition();
@@ -155,7 +154,7 @@ function banner(){
             addTransition();
             setTranslateX(-index * w);
         }
-        /*当不超过一定的滑动距离的时候*/
+        
         else {
             
             addTransition();
